@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-tags: true # required to choose appropriate titles for the version selector
+          fetch-depth: 0  # needed for git tag lookup
 
       - uses: actions/setup-python@v6
         with:
