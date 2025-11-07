@@ -1,0 +1,58 @@
+site_name: Example MkDocs Mike
+site_url: https://joffrey-bion.github.io/example-mkdocs-mike/
+
+docs_dir: src
+
+repo_name: example-mkdocs-mike
+repo_url: https://github.com/joffrey-bion/example-mkdocs-mike
+
+site_description: "An example repo with MkDocs and Mike."
+site_author: Joffrey Bion
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - navigation.expand
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+plugins:
+  - search
+  - macros # for variable substitution in Markdown files
+
+markdown_extensions:
+  - abbr # for abbreviation tooltips
+  - admonition # for info/warn/tip/... sections
+  - attr_list # required for attribute-based features (grid, alignment, buttons, tooltips, etc.)
+  - def_list # for definition lists (stomp config)
+  - footnotes
+  - pymdownx.details # for collapsible admonitions
+  - pymdownx.emoji # for emoji shortcuts with :name: syntax
+  - pymdownx.highlight # for syntax highlighting in code blocks
+  - pymdownx.inlinehilite # for inline code highlighting
+  - pymdownx.superfences # required for code highlighting, tabs, and nested content in general
+  - pymdownx.tabbed # for tabs support
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - 'Overview': index.md
+
+copyright: Copyright &copy; 2025 Joffrey Bion
