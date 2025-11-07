@@ -18,6 +18,8 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
+          # mike needs access to the gh-pages branch, and we also need
+          # tags to choose appropriate titles for the version selector
           fetch-depth: 0  # needed for git tag lookup
 
       - uses: actions/setup-python@v6
