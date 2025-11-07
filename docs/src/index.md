@@ -1,6 +1,6 @@
 # My beautiful docs
 
-This is the `main` branch.
+This is the `release/0.10` branch.
 
 This is the URL we build in these docs:
 
