@@ -43,10 +43,13 @@ jobs:
           latest_major_minor="${latest_full_version%.*}"
 
           # Update the selector title of this major.minor version to the new patch
+          echo "Update the selector title for the $tag_major_minor documentation to $tag_full_version"
           mike retitle "$tag_major_minor" "$tag_full_version"
 
           # The new tag may have become the new latest version (if it hasn't, this is harmless anyway)
+          echo "Update the default documentation version to $latest_major_minor"
           mike set-default "$latest_major_minor"
+          echo "Update the 'latest' alias to point to $latest_major_minor"
           mike alias "$latest_major_minor" latest --update-aliases
 
           git push origin gh-pages
