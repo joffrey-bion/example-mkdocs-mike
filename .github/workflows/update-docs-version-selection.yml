@@ -43,7 +43,7 @@ jobs:
           latest_major_minor="${latest_full_version%.*}"
 
           # Update the selector title of this major.minor version to the new patch
-          mike retitle "$tag_major_minor" --title "$tag_full_version" --update
+          mike retitle "$tag_major_minor" "$tag_full_version"
 
           # The new tag may have become the new latest version (if it hasn't, this is harmless anyway)
           mike set-default "$latest_major_minor"
