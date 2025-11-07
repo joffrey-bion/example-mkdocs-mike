@@ -35,6 +35,7 @@ theme:
 plugins:
   - search
   - macros # for variable substitution in Markdown files
+  - mike # for docs version selector and management
 
 markdown_extensions:
   - abbr # for abbreviation tooltips
