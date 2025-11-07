@@ -57,6 +57,8 @@ nav:
   - 'Overview': index.md
 
 extra:
+  version:
+    provider: mike
   git_branch: !ENV [BUILD_BRANCH, "HEAD"]
 
 copyright: Copyright &copy; 2025 Joffrey Bion
