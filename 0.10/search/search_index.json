@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"My beautiful docs","text":"<p>This is the <code>release/0.10</code> branch.</p> <p>This is the URL we build in these docs:</p> <p>https://github.com/joffrey-bion/example-mkdocs-mike/tree/release/0.10</p> <p>Some new stuff in release 0.10.</p>"}]}
