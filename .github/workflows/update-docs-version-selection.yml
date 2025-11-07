@@ -15,7 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v5
         with:
-          fetch-depth: 0  # needed for git tag lookup
+          # mike needs access to the gh-pages branch, and we also need
+          # tags to determine the latest version to set the default
+          fetch-depth: 0
 
       - uses: actions/setup-python@v6
         with:
